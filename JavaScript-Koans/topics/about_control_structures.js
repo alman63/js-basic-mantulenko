@@ -69,5 +69,5 @@ test("switch default case", function() {
 
 test("null coalescing", function() {
     var result = null || "a value";
-    equal(true, result, 'what is the value of result?');
+    equal("a value", result, 'what is the value of result?');
 });
