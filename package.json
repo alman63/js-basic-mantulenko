@@ -1,0 +1,20 @@
+{
+  "name": "js-basic-mantulenko",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alman63/js-basic-mantulenko.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alman63/js-basic-mantulenko/issues"
+  },
+  "homepage": "https://github.com/alman63/js-basic-mantulenko#readme"
+}
