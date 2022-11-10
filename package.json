@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/alman63/js-basic-mantulenko/issues"
   },
-  "homepage": "https://github.com/alman63/js-basic-mantulenko#readme"
+  "homepage": "https://github.com/alman63/js-basic-mantulenko#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
