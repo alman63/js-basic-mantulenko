@@ -15,6 +15,8 @@ module.exports = {
     "import/prefer-default-export": "off",
     "no-plusplus": "off",
     "no-console": "off",
+    "no-alert": "off",
+    "no-restricted-globals": "off",
     "max-len": [
       "error",
       {
