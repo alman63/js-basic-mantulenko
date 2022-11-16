@@ -23,4 +23,5 @@ export function createPage() {
   if (document.querySelector(".text").value === "") {
     document.querySelector(".button").style.display = "none";
   }
+  return document.querySelectorAll("p").length;
 }
