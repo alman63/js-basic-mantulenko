@@ -1,3 +1,4 @@
+// определения введенного значения к определенному типу - дата, телефон, почта
 export function testInput(str) {
   const regDate = /\d{1,2}[\.\/]\d{2}[\.\/]\d{2,4}/;
   const regMail = /[\da-z\.]+@[\da-z]+\.[a-z]+/;
@@ -10,12 +11,12 @@ export function testInput(str) {
     if (regDate.test(str)) {
       result = "Вы ввели дату";
     } else if (regMail.test(str)) {
-        result = "Вы ввели почту";
-      } else if (regTelefon.test(str)) {
-          result = "Вы ввели телефон";
-        } else {
-          result = "Ввод не определен";
-        }
+      result = "Вы ввели почту";
+    } else if (regTelefon.test(str)) {
+      result = "Вы ввели телефон";
+    } else {
+      result = "Ввод не определен";
+    }
     alert(result);
     return result;
   }
