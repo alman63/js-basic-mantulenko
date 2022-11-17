@@ -1,13 +1,13 @@
 import { sumLength } from "./1.2";
-
+// тестирование функции sumLength
 describe("sumLength", () => {
-  it("a= '' b = 'qwert'", () => {
+  it(" Для строк a= '' и  b = 'qwert' получаем 5 ", () => {
     expect(sumLength("", "qwert")).toBe(5);
   });
-  it(" a='' b ='' ", () => {
+  it(" Для строк  a='' и  b ='' получаем 0  ", () => {
     expect(sumLength("", "")).toBe(0);
   });
-  it(" a='GHn' b ='OPM' ", () => {
+  it(" Для строк a='GHn' и b ='OPM' получаем 6 ", () => {
     expect(sumLength("GHn", "OPM")).toBe(6);
   });
 });
