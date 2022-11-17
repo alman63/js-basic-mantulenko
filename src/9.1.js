@@ -1,3 +1,4 @@
+// проверка треугольника на прямой уол
 export function triangle(a, b, c) {
   if (
     a === Math.sqrt(b * b + c * c) ||
@@ -6,10 +7,8 @@ export function triangle(a, b, c) {
   ) {
     if (a === 0 || b === 0 || c === 0) {
       return false;
-    } 
-      return true;
-    
-  } 
-    return false;
-  
+    }
+    return true;
+  }
+  return false;
 }
