@@ -1,3 +1,4 @@
+// создание массива
 export function createArr() {
   const arr = [];
   for (let i = 0; i < 10; i++) {
@@ -5,10 +6,11 @@ export function createArr() {
   }
   return arr;
 }
-
+// сумма элементов массива
 export function sumArr(arr) {
   return arr.reduce((sum, item) => sum + item, 0);
 }
+// удвоенные элементы исходного массива записаны в новый
 export function newArr(arr) {
   const arrNew = [];
   for (let i = 0; i < arr.length; i++) {
@@ -16,6 +18,8 @@ export function newArr(arr) {
   }
   return arrNew;
 }
+
+// минимальный и максимальный элемент массива
 export function minMaxArr(arr) {
   const min = Math.min(...arr);
   const max = Math.max(...arr);

@@ -1,5 +1,5 @@
-import { createArr , sumArr , newArr , minMaxArr } from "./5.1";
-
+import { createArr, sumArr, newArr, minMaxArr } from "./5.1";
+// проверка создания массива
 describe("createArr", () => {
   it("размер массива 10", () => {
     expect(createArr().length).toBe(10);
@@ -8,7 +8,7 @@ describe("createArr", () => {
     expect(typeof createArr()[0]).toBe("number");
   });
 });
-
+// проверка суммы элементов масссива
 describe("sumArr", () => {
   it("Сумма массива [1,2,3] равна 6", () => {
     expect(sumArr([1, 2, 3])).toBe(6);
@@ -17,7 +17,7 @@ describe("sumArr", () => {
     expect(sumArr([0])).toBe(0);
   });
 });
-
+// проверка нового массива с удвоенными значениями
 describe("newArr", () => {
   it("От массива [1,2,3] ожидаем [2,4,6]", () => {
     expect(newArr([1, 2, 3])).toEqual([2, 4, 6]);
@@ -26,7 +26,7 @@ describe("newArr", () => {
     expect(newArr([0])).toEqual([0]);
   });
 });
-
+//  нахождение min max элементов массива
 describe("minMaxArr", () => {
   it("От массива [1,2,3] min равен 1, max 3", () => {
     expect(minMaxArr([1, 2, 3])).toEqual([3, 1]);
