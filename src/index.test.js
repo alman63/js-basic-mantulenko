@@ -1,7 +1,6 @@
 import { createPage } from "./createPage";
-// import { disableButton } from './disableButton';
 import { deleteP } from "./deleteP";
-
+// тестирование создания страницы и удаления параграфа
 describe("createPage", () => {
   it("При начальной загрузке должно быть три параграфа", () => {
     expect(createPage()).toBe(3);
@@ -14,6 +13,7 @@ describe("deleteP", () => {
   });
 });
 
+// import { disableButton } from './disableButton';
 // describe('disableButton', () => {
 //     it('Если поле пустое,  то кнопка выключена none', () => {
 //         expect(disableButton()).toBe('none');

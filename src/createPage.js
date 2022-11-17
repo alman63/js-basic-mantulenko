@@ -1,3 +1,4 @@
+// начальная функция заполнения страницы с параграфами, полем ввода, кнопкой
 export function createPage() {
   const div = document.createElement("div");
   const p = document.createElement("p");

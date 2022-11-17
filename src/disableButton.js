@@ -1,3 +1,4 @@
+// функция включения и выключения кнопки в зависимости от содержимого поля ввода
 export function disableButton() {
   document.querySelectorAll(".text").forEach((element) => {
     element.addEventListener("input", () => {

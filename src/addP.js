@@ -1,5 +1,5 @@
 import { deleteP } from "./deleteP";
-
+// функция добавления параграфа при нажатии на кнопку
 export function addP() {
   const button = document.querySelector("button");
   const div = document.querySelector("div");
