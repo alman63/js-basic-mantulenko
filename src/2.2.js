@@ -1,3 +1,4 @@
+// функция определения месяца по введенному пользователем числу
 export function month(a) {
   let m = "";
   switch (a) {
@@ -38,5 +39,6 @@ export function month(a) {
       break;
   }
   console.log(m);
+  alert(`Числу ${a} соответсвует месяц ${m}`);
   return m;
 }
