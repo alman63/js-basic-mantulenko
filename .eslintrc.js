@@ -13,6 +13,9 @@ module.exports = {
   plugins: ["jest"],
   rules: {
     "import/prefer-default-export": "off",
+    "no-alert": "off",
+    "no-console": "off",
+    "no-useless-escape": "off",
     "max-len": [
       "error",
       {
