@@ -1,5 +1,5 @@
-import { userAddAge , copyUser , destructuring } from "./4.1";
-
+import { userAddAge, copyUser, destructuring } from "./4.1";
+// проверка записи возраста
 describe(" Add user age", () => {
   it(" Add age 17 ", () => {
     expect(userAddAge(17)).toBe(17);
@@ -15,6 +15,8 @@ const user = {
   name: "John",
   age: 18,
 };
+
+// проверка создания пользователя admin от user
 describe(" Add admin", () => {
   it("check property name", () => {
     expect(copyUser(user).name).toBe(user.name);
@@ -28,6 +30,7 @@ describe(" Add admin", () => {
 });
 const admin = copyUser(user);
 
+// проверка destructuring объекта
 describe("destructuring admin", () => {
   it("check variable name", () => {
     expect(destructuring(admin)[0]).toBe("John");
