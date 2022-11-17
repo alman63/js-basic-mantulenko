@@ -1,5 +1,5 @@
 import { average } from "./3.3";
-
+// проверка функции для различных значений
 describe("average из нечетных до N", () => {
   it("При N = 1 среднее равно 1 ", () => {
     expect(average(1)).toBe(1);

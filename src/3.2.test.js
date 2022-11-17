@@ -1,5 +1,5 @@
 import { tableMulti } from "./3.2";
-
+// проверка функции умножения для разных чисел
 describe("tableMulti", () => {
   it("При  a = 9 получаем 9*9 =81", () => {
     expect(tableMulti(9)).toEqual(81);
