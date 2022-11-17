@@ -1,3 +1,4 @@
+// определения более молодого по дате рождения
 export function whoIsYoung(data1, data2) {
   const arr = data1.split(".");
   const arrNew = [arr[1], arr[0], arr[2]];
@@ -11,11 +12,9 @@ export function whoIsYoung(data1, data2) {
   const now = new Date();
   if (now - correctDate1 === now - correctDate2) {
     return "Они родились в один день";
-  } 
-    if (now - correctDate1 > now - correctDate2) {
-      return "Второй моложе";
-    } 
-      return "Первый моложе";
-    
-  
+  }
+  if (now - correctDate1 > now - correctDate2) {
+    return "Второй моложе";
+  }
+  return "Первый моложе";
 }

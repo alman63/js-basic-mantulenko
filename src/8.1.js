@@ -1,3 +1,4 @@
+// вывод дня недели по дате
 export function dayWeek(data) {
   const arr = data.split(".");
   const arrNew = [arr[1], arr[0], arr[2]];

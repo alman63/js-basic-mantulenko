@@ -1,3 +1,4 @@
+// подсчет количества секунд с начала дня
 export function countSecond(data) {
   console.log(
     data.getHours() * 3600 + data.getMinutes() * 60 + data.getSeconds()
