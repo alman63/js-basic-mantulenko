@@ -1,7 +1,10 @@
-import { month } from "./2.2";
 
-let a = prompt("Введите число от 1 до 12 включительно");
-while (!/[0-9]/.test(a) || Number(a) < 0 || Number(a) > 12) {
-  a = prompt("Повторите ввод. Введите число от 1 до 12 включительно !!!");
+import { average } from "./3.3";
+// проверка ввода пользователя
+let N = prompt("Введите целое число большее 1");
+while (isNaN(Number(N)) || Number(N) === 0 || Number(N) < 0) {
+  N = prompt("Повторите ввод, вы ввели не число");
 }
-month(a);
+average(N);
+
+
