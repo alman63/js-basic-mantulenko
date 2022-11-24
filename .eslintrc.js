@@ -14,8 +14,6 @@ module.exports = {
   rules: {
     "import/prefer-default-export": "off",
     "no-plusplus": "off",
-    "import/prefer-default-export": "off",
-    "no-plusplus": "off",
     "no-console": "off",
     "no-alert": "off",
     "no-restricted-globals": "off",
