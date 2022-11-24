@@ -19,7 +19,7 @@ module.exports = {
     "no-restricted-globals": "off",
     "default-case": "off",
     "no-fallthrough": "off",
-
+    "prefer-destructuring": ["error", { object: true, array: false }],
     "max-len": [
       "error",
       {
