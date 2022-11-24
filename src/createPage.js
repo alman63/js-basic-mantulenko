@@ -6,6 +6,7 @@ export function createPage() {
   const p3 = document.createElement("p");
   const input = document.createElement("input");
   const button = document.createElement("button");
+  div.setAttribute("class", "div__p");
   input.setAttribute("type", "text");
   input.setAttribute("class", "text");
   button.setAttribute("class", "button");
