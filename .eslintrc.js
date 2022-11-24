@@ -17,11 +17,14 @@ module.exports = {
     "no-console": "off",
     "no-alert": "off",
     "no-restricted-globals": "off",
+    "default-case": "off",
+    "no-fallthrough": "off",
     "prefer-destructuring": ["error", { object: true, array: false }],
     "max-len": [
       "error",
       {
         ignoreComments: true,
+        ignoreStrings: true,
       },
     ],
   },
