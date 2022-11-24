@@ -17,6 +17,9 @@ module.exports = {
     "no-console": "off",
     "no-alert": "off",
     "no-restricted-globals": "off",
+    "default-case": "off",
+    "no-fallthrough": "off",
+
     "max-len": [
       "error",
       {
