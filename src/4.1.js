@@ -9,11 +9,7 @@ export function userAddAge(N) {
 }
 // создание копии пользователя user
 export function copyUser(user) {
-  const admin = {};
-  const objArr = Object.entries(user);
-  for (let i = 0; i < objArr.length; i++) {
-    admin[`${objArr[i][0]}`] = objArr[i][1];
-  }
+  const admin = { ...user };
   admin.role = "admin";
   return admin;
 }
