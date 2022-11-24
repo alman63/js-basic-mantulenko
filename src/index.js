@@ -1,10 +1,8 @@
-
-import { average } from "./3.3";
-// проверка ввода пользователя
-let N = prompt("Введите целое число большее 1");
-while (isNaN(Number(N)) || Number(N) === 0 || Number(N) < 0) {
-  N = prompt("Повторите ввод, вы ввели не число");
-}
-average(N);
-
+import { disableButton } from "./disableButton";
+import { createPage } from "./createPage";
+import { addP } from "./addP";
+// заполнение страницы и запуск всех необходимых функций
+createPage();
+disableButton();
+addP();
 
