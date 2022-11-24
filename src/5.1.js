@@ -12,10 +12,7 @@ export function sumArr(arr) {
 }
 // удвоенные элементы исходного массива записаны в новый
 export function newArr(arr) {
-  const arrNew = [];
-  for (let i = 0; i < arr.length; i++) {
-    arrNew.push(arr[i] * 2);
-  }
+  const arrNew = arr.map((element) => element * 2);
   return arrNew;
 }
 
