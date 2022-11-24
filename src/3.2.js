@@ -1,8 +1,9 @@
 // функция вывода таблицы умножения определенной цифры
-
 export function tableMulti(a) {
+  let s = "";
   for (let i = 1; i <= 9; i++) {
-    console.log(` ${a} * `, i, " = ", a * i);
+    s += ` ${a} * ${i} = ${  a * i  }\n`;
   }
-  return a * 9;
+  console.log(s);
+  return s;
 }

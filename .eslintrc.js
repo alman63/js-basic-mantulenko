@@ -21,6 +21,7 @@ module.exports = {
       "error",
       {
         ignoreComments: true,
+        ignoreStrings: true,
       },
     ],
   },

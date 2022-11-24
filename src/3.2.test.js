@@ -1,13 +1,19 @@
 import { tableMulti } from "./3.2";
 // проверка функции умножения для разных чисел
 describe("tableMulti", () => {
+  const s2 =
+    " 2 * 1 = 2\n 2 * 2 = 4\n 2 * 3 = 6\n 2 * 4 = 8\n 2 * 5 = 10\n 2 * 6 = 12\n 2 * 7 = 14\n 2 * 8 = 16\n 2 * 9 = 18\n";
   it("При  a = 9 получаем 9*9 =81", () => {
-    expect(tableMulti(9)).toEqual(81);
+    expect(tableMulti(2)).toBe(s2);
   });
+  const s6 =
+    " 6 * 1 = 6\n 6 * 2 = 12\n 6 * 3 = 18\n 6 * 4 = 24\n 6 * 5 = 30\n 6 * 6 = 36\n 6 * 7 = 42\n 6 * 8 = 48\n 6 * 9 = 54\n";
   it("При  a = 6 получаем 6*9 =54", () => {
-    expect(tableMulti(6)).toEqual(54);
+    expect(tableMulti(6)).toBe(s6);
   });
+  const s0 =
+    " 0 * 1 = 0\n 0 * 2 = 0\n 0 * 3 = 0\n 0 * 4 = 0\n 0 * 5 = 0\n 0 * 6 = 0\n 0 * 7 = 0\n 0 * 8 = 0\n 0 * 9 = 0\n";
   it("При  a = 0 получаем 0*9 = 0", () => {
-    expect(tableMulti(0)).toEqual(0);
+    expect(tableMulti(0)).toBe(s0);
   });
 });
