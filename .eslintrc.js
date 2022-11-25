@@ -13,6 +13,7 @@ module.exports = {
   plugins: ["jest"],
   rules: {
     "import/prefer-default-export": "off",
+    "no-useless-escape": "off",
     "no-plusplus": "off",
     "no-console": "off",
     "no-alert": "off",
