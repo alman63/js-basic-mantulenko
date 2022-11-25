@@ -11,6 +11,6 @@ describe("radius", () => {
     expect(radius(0)[1]).toBe(0);
   });
   it("Площадь круга при R=-5 равна", () => {
-    expect(radius(-5)[1]).toBe(NaN);
+    expect(radius(-5)).toBe(null);
   });
 });

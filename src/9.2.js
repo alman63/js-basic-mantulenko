@@ -5,5 +5,5 @@ export function radius(R) {
     const ploshad = R * R * Math.PI;
     return [dlina, ploshad];
   }
-  return [NaN, NaN];
+  return null;
 }
