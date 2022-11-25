@@ -13,13 +13,20 @@ module.exports = {
   plugins: ["jest"],
   rules: {
     "import/prefer-default-export": "off",
-    "no-alert": "off",
-    "no-useless-escape": "off",
     "consistent-return": "off",
+    "no-useless-escape": "off",
+    "no-plusplus": "off",
+    "no-console": "off",
+    "no-alert": "off",
+    "no-restricted-globals": "off",
+    "default-case": "off",
+    "no-fallthrough": "off",
+    "prefer-destructuring": ["error", { object: true, array: false }],
     "max-len": [
       "error",
       {
         ignoreComments: true,
+        ignoreStrings: true,
       },
     ],
   },
