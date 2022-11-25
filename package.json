@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "jest",
+        "test": "TZ=Europe/Samara jest",
         "lint": "eslint .",
         "lint:fix": "prettier --write . && eslint . --fix",
         "prepare": "husky install"
