@@ -1,0 +1,50 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 78px;
+    color: rgb(5, 5, 10);
+}
+h2 {
+    color: blue;
+}
+p {
+    color: blue;
+}
+ul {
+    margin: 10px;
+    color: blue;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10%;
+    padding-top: 5%;
+}
+.content__result {
+    padding-top: 80px;
+}
+.search {
+    padding-top: 30px;
+    height: 10vh;
+    background-color: #fff;
+}
+.search__form_buttom {
+    color: rgb(88, 88, 175);
+}
