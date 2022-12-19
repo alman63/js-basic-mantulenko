@@ -1,7 +1,7 @@
 import { clickLi } from './clickLi';
 export function addHistory(obj) {
     let arrHistory = JSON.parse(localStorage.getItem('history'));
-    const ul = document.querySelector('.history_ul');
+    const ul = document.querySelector('.history__ul');
     //проверка первого сохранения localstorage в массив
     let history = arrHistory === null ? [] : [...arrHistory];
     //

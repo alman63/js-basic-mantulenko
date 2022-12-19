@@ -6,7 +6,7 @@ async function resetResult(city) {
     const pTemp = document.querySelector('.pTemp');
     const pCity = document.querySelector('.pCity');
     const imgIcon = document.querySelector('.icon');
-    const img = document.querySelector('.map_img');
+    const img = document.querySelector('.content__map_img');
     if (json.cod == '404') {
         pCity.innerText = `Введите повторно - нет такого города в базе`;
         pTemp.innerText = ``;
@@ -14,6 +14,7 @@ async function resetResult(city) {
             'src',
             `https://avatars.mds.yandex.net/i?id=8b74ba27269a7cf022fefea25f692daef9623322-4340501-images-thumbs&n=13`
         );
+        return 'Введите повторно - нет такого города в базе';
     } else {
         pCity.innerText = `Ваш город: ${json.name}`;
         pTemp.innerText = `Температура в Вашем городе: ${Math.ceil(
@@ -28,6 +29,7 @@ async function resetResult(city) {
             `https://static-maps.yandex.ru/1.x/?ll=${json.coord.lon},${json.coord.lat}8&size=400,300&amp&spn=0.016457,0.00619&l=map`
         );
         addHistory(json);
+        return `Ваш город ${json.name}`;
     }
 }
 
