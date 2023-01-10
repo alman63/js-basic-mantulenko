@@ -1,4 +1,5 @@
 import { clickLi } from './clickLi';
+
 export function addHistory(obj) {
     let arrHistory = JSON.parse(localStorage.getItem('history'));
     const ul = document.querySelector('.history__ul');

@@ -29,6 +29,12 @@ ul {
     margin: 10px;
     color: blue;
 }
+li {
+    padding-top: 5px;
+}
+li:hover {
+    cursor: pointer;
+}
 .content {
     display: flex;
     flex-direction: row;
