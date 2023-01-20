@@ -58,10 +58,9 @@ function addLi(str) {
 }
 
 export function getInput() {
-    // const button = document.querySelector('.search__form_buttom');
     const form = document.querySelector('.search__form');
-    form.addEventListener('submit', (event) => {
-        event.preventDefault();
+    form.addEventListener('submit', (form) => {
+        form.preventDefault();
         const str = document.querySelector('.search__form_input').value;
         resetResult(str);
         document.querySelector('.search__form_input').value = '';
