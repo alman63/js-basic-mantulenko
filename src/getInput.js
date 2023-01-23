@@ -1,18 +1,6 @@
 import { addHistory } from './addHistory';
 import { getWeather } from './firstLoad';
 
-function getInput() {
-    const form = document.querySelector('.search__form');
-    form.addEventListener('submit', async (form) => {
-        form.preventDefault();
-        const str = document.querySelector('.search__form_input').value;
-        const dataWeather = await getWeather(str);
-        resetResult(dataWeather);
-        document.querySelector('.search__form_input').value = '';
-    });
-}
-export { getInput };
-
 function addLi(str) {
     const arrli = document.querySelectorAll('li');
     let count = 0;
@@ -73,3 +61,15 @@ function resetResult(dataWeather) {
     }
 }
 export { resetResult };
+
+function getInput() {
+    const form = document.querySelector('.search__form');
+    form.addEventListener('submit', async (form) => {
+        form.preventDefault();
+        const str = document.querySelector('.search__form_input').value;
+        const dataWeather = await getWeather(str);
+        resetResult(dataWeather);
+        document.querySelector('.search__form_input').value = '';
+    });
+}
+export { getInput };

@@ -24,6 +24,10 @@ module.exports = {
         'no-fallthrough': 'off',
         'dot-notation': 0,
         'no-else-return': 'off',
+        camelcase: 'off',
+        'import/no-duplicates': 'off',
+        'spaced-comment': 'off',
+        'prefer-promise-reject-errors': 'off',
         'prefer-destructuring': ['error', { object: true, array: false }],
         'max-len': [
             'error',
