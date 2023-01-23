@@ -32,8 +32,9 @@ function addLi(str) {
         //let ul = document.querySelector('.history__ul');
         const li = document.createElement('li');
         li.innerText = str;
-        li.addEventListener('click', () => {
-            resetResult(li.textContent);
+        li.addEventListener('click', async () => {
+            const dataWeather = await getWeather(li.textContent);
+            resetResult(dataWeather);
         });
         document.querySelector('.history__ul').appendChild(li);
     }
