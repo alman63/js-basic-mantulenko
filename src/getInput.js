@@ -64,8 +64,8 @@ export { resetResult };
 
 function getInput() {
     const form = document.querySelector('.search__form');
-    form.addEventListener('submit', async (form) => {
-        form.preventDefault();
+    form.addEventListener('submit', async (form1) => {
+        form1.preventDefault();
         const str = document.querySelector('.search__form_input').value;
         const dataWeather = await getWeather(str);
         resetResult(dataWeather);

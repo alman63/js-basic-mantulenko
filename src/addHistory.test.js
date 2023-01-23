@@ -40,7 +40,7 @@ describe(' Тестируем addHistory', () => {
         expect(addHistory('Oslo').length).toBe(1);
     });
     it('Если в истории есть Oslo, длина массива не изменится', async () => {
-        let history = ['Oslo'];
+        const history = ['Oslo'];
         localStorage.setItem('history', JSON.stringify(history));
         expect(addHistory('Oslo').length).toBe(1);
     });

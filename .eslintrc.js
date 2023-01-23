@@ -25,6 +25,8 @@ module.exports = {
         'dot-notation': 0,
         'no-else-return': 'off',
         camelcase: 'off',
+        'no-use-before-define': 'off',
+        'arrow-body-style': 'off',
         'import/no-duplicates': 'off',
         'spaced-comment': 'off',
         'prefer-promise-reject-errors': 'off',
