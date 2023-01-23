@@ -1,4 +1,3 @@
-import { firstLoad } from './firstLoad';
 import { getWeather } from './firstLoad';
 import { createPage } from './firstLoad';
 

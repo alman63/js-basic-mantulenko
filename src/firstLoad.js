@@ -14,7 +14,7 @@ async function getWeather(city) {
         const getWeath = await fetch(
             `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=9131f66cd3745fc87830ad367b122a9c`
         );
-        let weather = await getWeath.json();
+        const weather = await getWeath.json();
         return weather;
     } catch (err) {
         return null;
@@ -55,12 +55,12 @@ export function createPage(weatherCity) {
 async function firstLoad() {
     const localHistory = JSON.parse(localStorage.getItem('history'));
     if (localHistory === null) {
-        let resultCity = await getGeo();
-        let dataWeather = await getWeather(resultCity.city);
+        const resultCity = await getGeo();
+        const dataWeather = await getWeather(resultCity.city);
         createPage(dataWeather);
     } else {
-        let resultCity = localHistory.at(-1);
-        let dataWeather = await getWeather(resultCity);
+        const resultCity = localHistory.at(-1);
+        const dataWeather = await getWeather(resultCity);
         createPage(dataWeather);
     }
     getInput();

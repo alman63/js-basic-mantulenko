@@ -22,12 +22,15 @@ module.exports = {
         'default-case': 'off',
         'import/no-cycle': 'off',
         'no-fallthrough': 'off',
+        'dot-notation': 0,
+        'no-else-return': 'off',
         'prefer-destructuring': ['error', { object: true, array: false }],
         'max-len': [
             'error',
             {
                 ignoreComments: true,
                 ignoreStrings: true,
+                ignoreUrls: true,
             },
         ],
     },
