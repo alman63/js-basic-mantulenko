@@ -1,15 +1,14 @@
 import { addHistory } from './addHistory';
 import { getWeather } from './firstLoad';
 
-async function resetResult(city) {
-    const dataWeather = await getWeather(city);
+function resetResult(dataWeather) {
     const cityName = document.querySelector('.cityName');
     const cityTemp = document.querySelector('.cityTemp');
     const imgIcon = document.querySelector('.icon');
     const img = document.querySelector('.content__map_img');
-    if (dataWeather.cod == '404') {
-        cityName.innerText = `Введите повторно - нет такого города в базе`;
-        cityTemp.innerText = ``;
+    if (dataWeather.cod == '404' || dataWeather.cod == '400') {
+        cityName.innerText = 'Введите повторно - нет такого города в базе';
+        cityTemp.innerText = '';
         imgIcon.style.display = 'none';
         img.setAttribute(
             'src',
@@ -32,7 +31,7 @@ async function resetResult(city) {
         );
         addHistory(dataWeather.name);
         addLi(dataWeather.name);
-        return `Ваш город ${dataWeather.name}`;
+        return `Город: ${dataWeather.name}`;
     }
 }
 export { resetResult };
@@ -40,29 +39,37 @@ export { resetResult };
 function addLi(str) {
     const arrli = document.querySelectorAll('li');
     let count = 0;
+    //проверяем есть ли повторения в списке
     arrli.forEach((element) => {
         if (element.textContent === str) {
             count += 1;
         }
     });
-    console.log(count);
+    //если повторений нет - то добаввляем в список
     if (count === 0) {
-        const ul = document.querySelector('.history__ul');
+        if (arrli.length > 9) {
+            arrli[0].remove(); // удаляем первый из списка
+        }
+        // let ul = document.querySelector('.history__ul');
         const li = document.createElement('li');
         li.innerText = str;
         li.addEventListener('click', () => {
             resetResult(li.textContent);
         });
-        ul.appendChild(li);
+        document.querySelector('.history__ul').appendChild(li);
     }
+    return arrli;
 }
-
-export function getInput() {
+export { addLi };
+function getInput() {
     const form = document.querySelector('.search__form');
-    form.addEventListener('submit', (form) => {
+    form.addEventListener('submit', async (form) => {
         form.preventDefault();
         const str = document.querySelector('.search__form_input').value;
-        resetResult(str);
+        const dataWeather = await getWeather(str);
+        resetResult(dataWeather);
         document.querySelector('.search__form_input').value = '';
     });
 }
+
+export { getInput };

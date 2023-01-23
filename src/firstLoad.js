@@ -22,7 +22,7 @@ async function getWeather(city) {
 }
 export { getWeather };
 
-async function createPage(weatherCity) {
+export function createPage(weatherCity) {
     const content__result = document.querySelector('.content__result');
     const cityName = document.createElement('p');
     const cityTemp = document.createElement('p');
@@ -49,7 +49,9 @@ async function createPage(weatherCity) {
         'src',
         `https://static-maps.yandex.ru/1.x/?ll=${weatherCity.coord['lon']},${weatherCity.coord['lat']}&size=400,300&amp&spn=2,2&l=map`
     );
+    return img.getAttribute('src');
 }
+
 async function firstLoad() {
     const localHistory = JSON.parse(localStorage.getItem('history'));
     if (localHistory === null) {
